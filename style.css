@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: #fff;
+    width: 240px;
+    height: 98vh;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    /* margin-bottom: 30px; */
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img{
+    margin-top: -10px;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.navlinks{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    margin-top: -40px;
+    margin-left: 40px;
+}
+
+.navlinks a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: all ease-in-out 0.4s;
+}
+
+.navlinks a:hover{
+    color: #ffffff8c;
+    transition: all ease-in-out 0.4s;
+}
+
+.navlinks a:focus{
+    color: #ffffff8c;
+    transition: all ease-in-out 0.4s;
+}
+
+.navlinks a img{
+    width: 14%;
+    margin-right: 8px;
+}
+
+
+.account-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-info a{
+    padding: 8px 40px;
+    border: 1.5px solid #fff;
+    background: #fff;
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+
+.account-info a:hover{
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.account-info p{
+    font-weight: bold;
+    margin: 5px;
+    font-size: 0.9rem;
+    padding: 13px 40px;
+    text-transform: capitalize;
+    box-shadow: 0 0 20px 0px rgba(252, 247, 247, 0.489);
+    margin-top: -10px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+section{
+    padding: 10px;
+    width: 70%;
+    margin-left: 25%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    font-size: 1.8rem;
+}
+
+.title .line{
+    padding: 2.5px;
+    background: black;
+    border-radius: 50px;
+    width: 8%;
+    margin-top: 10px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.217);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.container form label{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container form input, select{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1.3px solid black;
+}
+
+.container form button{
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    background: black;
+    color: #fff;
+    border-radius: 6px;
+    transition: all ease-in-out 0.5s;
+    border: none;
+    width: 20%;
+}
+
+.container form button:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.671);
+    transition: all ease-in-out 0.5s;
+}
+
+::placeholder{
+    color: black;
+}
+
+table{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    background: black;
+    color:#fff;
+}
+
+tr:nth-child(odd){
+    background: lightgray;
+}
+
+tr,th,td{
+    padding: 15px;
+}
+
+td a{
+    color: #fff;
+    background: black;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1.5px solid black;
+    transition: all ease-in-out 0.4s;
+}
+
+td a:hover{
+    background: transparent;
+    color: black;
+    border: 1.5px solid black;
+    transition: all ease-in-out 0.4s;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container form{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.217);
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 10px;
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container form .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form .title h1{
+    font-size: 1.8rem;
+}
+
+.login-container form .title .line{
+    width: 15%;
+    padding: 3px;
+}
+
+.login-container form label{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+.login-container form input{
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    font-size: 0.8rem;
+}
+
+.login-container form button{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background: black;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.login-container form button:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.655);
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.login-container form button:focus{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.655);
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+.error{
+    background: black;
+    color: #fff;
+    width: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.dashboard-content{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.29);
+    height: auto;
+    margin: 20px;
+}
+
+.dashboard-content img{
+    width: 25%;
+}
+
+.dashboard-content h4{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dashboard-content a{
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: lightgray;
+    margin-top: 10px;
+    transition: all ease-in-out 0.4s;
+}
+
+.dashboard-content a:hover{
+    background: rgba(125, 112, 112, 0.427);
+    transition: all ease-in-out 0.4s;
+}
+
